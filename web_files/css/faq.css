@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: #21110f;
+}
+
+.game-title {
+    width: 45%;
+    height: 270px;
+    margin-left: 28%;
+    margin-bottom: 5%;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #21110f;
+    margin-top: -4%;
+}
+
+.button-about {
+    position: relative;
+    color: #fed800;
+    background-color: #2e1604;
+    width: 300px;
+    height: 50px;
+    margin: 10px 0;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.button-about::after, .button-about::before {
+    border: 3px solid #af520a;
+    content: '';
+    position: absolute  ;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    transition: transform 0.3s ease;
+}
+
+.button-about:hover::after {
+    transform: translate(-4px, -4px);
+}
+
+.button-about:hover::before {
+    transform: translate(4px, 4px);
+}
+
+.title-page {
+    width: 15%;
+    height: 50px;
+    background-color: #fed800;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+/* Main Content */
+
+.tell {
+    margin-top: 60px;
+    margin-left: 20%;
+    color: #fed800;
+}
+
+.game-desc {
+    color: #fed800;
+    font-size: 18px;
+    margin-left: 20%;
+    margin-top: 15px;
+    padding-right: 20%;
+}
+
+/* Game Image */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.game-image-1 {
+    width: 70%;
+    height: 380px;
+}
+
+.question-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20%;
+}
+
+.question {
+    margin-top: 60px;
+    margin-left: 25%;
+    color: #fed800;
+    font-size: 28px;
+}
+
+#q-button {
+    margin-top: 30px;
+    background-color: #21110f;
+    border: none;
+    margin-left: -70px;
+    cursor: pointer;
+}
+
+.chev-icon {
+    width: 45px;
+    height: 35px;
+    filter: invert(65%) sepia(90%) saturate(4741%) hue-rotate(360deg) brightness(102%) contrast(106%);
+}
+
+.answer {
+    background-color: #2e1604;
+    font-size: 18px;
+    color: #fed800;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+/* q and a */
+
+#faq-page {
+  min-height: 60vh;
+  margin: 100px auto;
+}
+
+
+#qna-main-container {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.questions button {
+  color: #f5b301;
+  font-size: 25px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin: 50px 0;
+}
+
+.questions {
+  border-bottom: solid 1px #af520a;
+  position: relative;
+}
+.questions button:hover {
+  color: #af520a;
+  transition: all 0.3s;
+}
+
+.questions button img {
+  height: 17px;
+  width: 17px;
+  user-select: none;
+  position: absolute;
+  right: 0;
+}
+
+.answers {
+  font-family: sc;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #fff;
+  display: none;
+  padding-bottom: 40px;
+  border-bottom: solid 1px #af520a;
+  top: 1px;
+}
+
+.answers-show {
+  display: block;
+  animation: show 0.8s;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.questions-rem-border {
+  border-bottom: none;
+}
+
+.rotate-down {
+  animation: rotate-down 0.3s;
+  transform: rotate(0deg);
+  width: 30px;
+  height: 30px;
+  filter: invert(63%) sepia(73%) saturate(1787%) hue-rotate(9deg) brightness(107%) contrast(100%);
+}
+
+.icon-1 {
+    position: relative;
+    top: 8px;
+    left: 170px;
+}
+
+.icon-2 {
+    position: relative;
+    top: 8px;
+    left: 435px;
+}
+
+.icon-3 {
+    position: relative;
+    top: 8px;
+    left: 547px;
+}
+
+.icon-4 {
+    position: relative;
+    top: 8px;
+    left: 292px;
+}
+
+.icon-5 {
+    position: relative;
+    top: 8px;
+    left: 65px;
+}
+
+@keyframes rotate-down {
+  0% {
+    transform: rotate(180deg);
+  }
+  25% {
+    transform: rotate(225deg);
+  }
+  50% {
+    transform: rotate(270deg);
+  }
+  75% {
+    transform: rotate(315deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-up {
+  animation: rotate-up 0.3s;
+  transform: rotate(180deg);
+}
+
+@keyframes rotate-up {
+  0% {
+    transform: rotate(360deg);
+  }
+  25% {
+    transform: rotate(315deg);
+  }
+  50% {
+    transform: rotate(270deg);
+  }
+  75% {
+    transform: rotate(225deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+/* q and a end*/
+
+/* footer */
+.button-container-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #21110f;
+    margin-top: 60px;
+}
+
+.flag-img {
+    width: 100px;
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 6%;
+    background-color: #21110f;
+}
+
+.footer-text {
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ac4c03;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+}
+
+.it-logo {
+    width: 20%;
+    height: 18%;
+}
+
+.supremo-logo {
+    width: 17%;
+    height: 180px;
+}
+
+

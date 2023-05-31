@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #21110f;
+}
+
+
+.game-title {
+    width: 45%;
+    height: 270px;
+    margin-left: 28%;
+}
+
+.game-asset-title {
+    width: 100%;
+    height: 50px;
+    background-color: #fed800;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #21110f;
+    margin-top: -4%;
+}
+
+.button-about {
+    position: relative;
+    color: #fed800;
+    background-color: #2e1604;
+    width: 300px;
+    height: 50px;
+    margin: 10px 0;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.button-about::after, .button-about::before {
+    border: 3px solid #af520a;
+    content: '';
+    position: absolute  ;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    transition: transform 0.3s ease;
+}
+
+.button-about:hover::after {
+    transform: translate(-4px, -4px);
+}
+
+.button-about:hover::before {
+    transform: translate(4px, 4px);
+}
+
+.title-page {
+    width: 15%;
+    height: 50px;
+    background-color: #fed800;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+/* Buttons End */
+/* Main */
+.video-container {
+    background-color: #21110f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video {
+    width: 70%;
+    height: 70%;
+    margin-top: 4%;
+    margin-bottom: 5px;
+}
+
+.vid-desc-con {
+    margin-left: 15%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #fed800;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.t1 {
+    margin-left: 2%;
+}
+
+.t2 {
+    color: #af520a;
+    margin-right: 2%;    
+}
+
+.game-image-container {
+    background-color: #21110f;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+.game-con-upper, .game-con-lower {
+    margin-bottom: 3%;
+    margin-left: 7%;
+}
+
+.game-con-lower {
+    display: flex;
+    text-align: center;
+    color: #fed800;
+    font-size: 32px;
+    margin-left: 20%;
+}
+
+.game-quotes {
+    padding-right: 11%;
+}
+
+.game-image {
+    width: 35%;
+    height: 30%;
+    margin-left: 8%;
+    filter: brightness(80%);
+    transition: filter .3s ease;
+}
+
+.game-image:hover {
+    filter: brightness(100%);
+}
+
+.author {
+    font-size: 20px;
+    color: #af520a;
+}
+
+.image-4 {
+    width: 40%;
+    height: 30%;
+}
+
+/* POSTER PAGE */
+.poster {
+    width: 30%;
+    height: 30%;
+    margin-left: 16%;
+}
+
+.pic-container {
+    display: flex;
+}
+
+.game-q, .game-q2 {
+    color: #fed800;
+    font-size: 32px;
+    text-align: center;
+}
+
+.game-q {
+    padding-top: 2%;
+    margin-bottom: 20%;
+}
+
+.game-text {
+    margin-left: 10%;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 6%;
+    background-color: #21110f;
+}
+
+.footer-text {
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ac4c03;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+}
+
+.it-logo {
+    width: 20%;
+    height: 18%;
+}
+
+.supremo-logo {
+    width: 17%;
+    height: 180px;
+}
+/* Footer Section End */
+/* Selection Page */
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #21110f;
+    padding-top: 7%;
+}
+
+.button-about {
+    position: relative;
+    color: #fed800;
+    background-color: #2e1604;
+    width: 400px;
+    height: 50px;
+    margin: 10px 0;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.button-about::after, .button-about::before {
+    border: 3px solid #af520a;
+    content: '';
+    position: absolute  ;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    transition: transform 0.3s ease;
+}
+
+.button-about:hover::after {
+    transform: translate(-4px, -4px);
+}
+
+.button-about:hover::before {
+    transform: translate(4px, 4px);
+}
+
+.flag-img {
+    width: 100px;
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* Selection Page End */
+
+
+
+
+

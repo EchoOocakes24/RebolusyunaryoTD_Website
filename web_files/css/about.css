@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 115vh;
+    background: #21110f;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 115vh;
+    overflow: hidden;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 25px;
+    background: #fed800;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #e6d67e,
+    0 0 50px #fed800,
+    0 0 100px #fed800;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+    opacity: .7;
+}
+
+.bubbles span:nth-child(even) {
+    background: #ff6f01;
+    box-shadow: 0 0 0 10px #e7ad81,
+    0 0 50px #ff6f01,
+    0 0 100px #ff6f01;
+    opacity: .7;
+}
+
+@keyframes animate {
+    0%
+    {
+        transform: translateY(115vh) scale(0);
+    }
+}
+
+
+
+/* Team Image */
+.team-container {
+    height: 40vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+
+.team-background {
+    height: 90%;
+    width: 80%;
+    margin: auto;
+    transform: skew(-15deg);
+    display: flex;
+}
+
+.team-container .team-background .members {
+    background-color: brown;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+/** Images **/
+.profile-1 {
+  width: 140%;
+  height: 110%;
+  position: relative;
+  top: -10%;
+  transform: skew(15deg);
+  margin-left: -20%;
+}
+
+.profile-2 {
+    width: 140%;
+    height: 110%;
+    position: relative;
+    top: -10%;
+    transform: skew(15deg);
+    margin-left: -20%;
+}
+
+.profile-6 {
+    width: 140%;
+    height: 110%;
+    position: relative;
+    top: -10%;
+    transform: skew(15deg);
+    margin-left: -20%;
+}
+
+/** Design **/
+.members .front-cover {
+    position: absolute;
+    top: 46%;
+    width: 16.5%;
+    height: 55%;
+    background: linear-gradient(to top, #ff6f01, transparent);
+    z-index: 2;
+    opacity: 1;
+    font-family: Poppins;
+    font-weight: bold;
+    color: #553115;
+}
+
+.members .name {
+    transform: skew(15deg);
+    text-align: center;
+    margin-top: 45%;
+    line-height: 20px;
+}
+
+.logo {
+   width: 45px;
+   height: 40px;
+   position: absolute;
+   top: -85%;
+   right: 0;
+   transform: skew(10deg);
+}
+
+/** Hover **/
+.front-hover {
+    position: absolute;
+    background-color: #553115;
+    top: 0;
+    z-index: 3;
+    width: 16.5%;
+    height: 100%;
+    opacity: 1;
+}
+
+.prof-icon {
+    margin-top: 15px;
+    width: 25%;
+    height: 25%;
+    transform: skew(15deg);
+    position: relative;
+    left: 35%;
+    top: 20%;
+    filter: invert(95%) sepia(44%) saturate(6270%) hue-rotate(343deg) brightness(94%) contrast(112%);
+    opacity: .8;
+}
+
+.prof-label {
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: bold;
+    transform: skew(15deg);
+    color: #fed800;
+    letter-spacing: 5px;
+    opacity: .8;
+}
+
+.label-1, .label-6 {
+    position: relative;
+    left: 30%;
+    top: 20%;
+}
+
+.label-2 {
+    position: relative;
+    left: 5%;
+    top: 20%;
+}
+
+.label-3, .label-4 {
+    position: relative;
+    left: 20%;
+    top: 20%;
+}
+
+.label-5 {
+    position: relative;
+    left: 7%;
+    top: 21%;
+}
+
+.front-hover:hover {
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/* about end */
+
+.page-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #fed800;
+    position: relative;
+}
+
+.about-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    position: relative;
+}
+
+.team-name {
+    margin-left: 20%;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #ac4c03;
+}
+
+.team-desc {
+    margin-left: 10%;
+    margin-right: 20%;
+    letter-spacing: 1px;
+    line-height: 25px;
+    background-color: rgba(254, 216, 0, .8);
+    padding: 3%;
+    color: #21110f;
+    font-weight: bold;
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #21110f;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+.button-about {
+    position: relative;
+    color: #fed800;
+    background-color: #2e1604;
+    width: 400px;
+    height: 50px;
+    margin: 10px 0;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.button-about::after, .button-about::before {
+    border: 3px solid #af520a;
+    content: '';
+    position: absolute  ;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    transition: transform 0.3s ease;
+}
+
+.button-about:hover::after {
+    transform: translate(-4px, -4px);
+}
+
+.button-about:hover::before {
+    transform: translate(4px, 4px);
+}
